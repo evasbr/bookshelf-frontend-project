@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <title>Bookshelf App</title>
+</head>
+<body>
+    <header>
+        <p>Bookshelf-App</p>
+    </header>
+    <main>
+        <aside>
+            <div id="info-container">
+                <p class="section-title" id="user-name">Eva Sabrina</p>
+                <p>Total books : <span id="total-book-score">0</span></p>
+                <p>Finished book : <span id="finished-book-score">0</span></p>
+            </div>
+            <div id="menu-container">
+                <button class="menu-buttons" id="add-book-button">Add book</button>
+                <button class="menu-buttons" id="show-books-button">Show current book shelf</button>
+                <button class="menu-buttons" id="search-books-button">Search Book</button>
+            </div>
+        </aside>
+        <article>
+            <div id="add-book-container">
+                <form action="#" id="add-book-form">
+                    <p class="section-title">Add new book information</p>
+                    <label for="book-title">Book Title :</label>
+                    <br>
+                    <input type="text" id="book-title" placeholder="Book title here">
+                    <br>
+                    <label for="book-author">Author : </label>
+                    <br>
+                    <input type="text" id="book-author" placeholder="Book author here">
+                    <br>
+                    <label for="book-year">Year Published: </label>
+                    <br>
+                    <input type="number" id="book-year" placeholder="Year published here" max="2023">
+                    <br>
+                    <input type="checkbox" id="isFinished-checkbox">
+                    <label for="isFinished-checkbox">Finished Reading</label>
+                    <br>
+                    <input id="submit-button" type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </form>
+            </div>
+
+            <div id="show-books-container">
+                <div id="unfinished-book-container" class="shelf-container">
+                    <h1 class="section-title">Unfinished Book</h1>
+                    <div id="unfinished-book-list">
+                    </div>
+                </div>
+                <div id="finished-book-container" class="shelf-container">
+                    <h1 class="section-title">Finished Book</h1>
+                    <div id="finished-book-list">
+                    </div>
+                </div>
+            </div>
+
+            <div id="search-books-container">
+                <p class="section-title">Search Book</p>
+                <form id="search-form">
+                    <label for="search-book-title">Book Title : </label>
+                    <input type="text" id="search-book-title" placeholder="Book title here">
+                    <input id="submit-search-button" type="submit" value="Submit">
+                </form>
+            </div>
+        </article>
+    </main>
+    <script src="script-dom.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
