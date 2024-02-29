@@ -1,4 +1,4 @@
-# Bookshel Frontend Project
+# Bookshelf Frontend Project
 
 Web ini digunakan untuk menyimpan informasi bacaan buku seperti judul buku, penulis, tanggal diterbitkan, hingga status buku apakah sudah selesai dibaca atau belum. Untuk menyimpan informasi tersebut, digunakan web storage berupa local storage.
 
